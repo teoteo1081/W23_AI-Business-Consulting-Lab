@@ -1,5 +1,7 @@
 # AIMICA Discovery — câu hỏi nháp
 
+**Lưu bản nháp lịch sử Phase 0.** Ngày 2026-11-25, TJ đã cho phép AIM-01 nghiên cứu nguồn công khai. Bộ 15 câu hỏi hiện hành duy nhất ở [DISCOVERY_QUESTIONS.md](DISCOVERY_QUESTIONS.md); phát hiện và nguồn ở [INDUSTRY_BRIEF.md](INDUSTRY_BRIEF.md). Không tiếp tục duy trì hai bộ câu hỏi song song. Nội dung dưới đây phản ánh thời điểm trước nghiên cứu, được giữ để bảo toàn lịch sử; chưa có khách duyệt.
+
 Trạng thái: **CHƯA XÁC MINH — CHƯA ĐƯỢC KHÁCH DUYỆT**. Ngày: 2026-11-25.
 
 Nguồn hiện có: TJ chọn AIMICA làm case đầu và cung cấp https://aimica.vn/. Chưa mở/khảo sát website; chưa xác nhận pháp nhân, sản phẩm, đối tượng khách hàng, chatbot, Zalo hoặc công nghệ đang dùng. Chưa liên hệ AIMICA.

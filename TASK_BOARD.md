@@ -7,14 +7,24 @@ Cập nhật: 2026-11-25. Trạng thái: DONE = có kết quả và bằng chứ
 | P0-01 | Kiểm tra thư mục, tạo Git độc lập | Codex | DONE | E01–E02 trong PROJECT_STATUS.md |
 | P0-02 | Tạo bộ tài liệu tối thiểu và inventory skill | Codex | DONE | 11 file ở root; E03–E04 |
 | P0-03 | Kiểm chứng và bàn giao Phase 0 | Codex | DONE | E05–E06; HANDOFF.md |
-| AIM-01 | TJ rà soát câu hỏi discovery và chốt phạm vi khảo sát AIMICA cùng AI | TJ; AI hỗ trợ sau khi được phép | WAITING_AUTHORIZATION | TJ chưa cho phép Phase 1; chưa có xác nhận khách |
+| AIM-01 | Business discovery từ nguồn công khai theo phạm vi TJ mở ngày 2026-11-25 | Codex | DONE | INDUSTRY_BRIEF.md, DISCOVERY_QUESTIONS.md, INITIAL_USE_CASES.md; P1-E01–E04 trong PROJECT_STATUS.md. Chỉ hoàn tất desk research, chưa phỏng vấn hoặc khách duyệt |
+| AIM-02 | Current Chatbot QA Evidence Collection — chatbot Zalo hiện hữu, góc nhìn khách mua bảo hiểm | AGY (dự kiến; chưa nhận/chạy việc) | WAITING_AUTHORIZATION | TJ đã chọn hướng QA; chưa ra lệnh thực hiện. Phải chốt đúng bot, phạm vi, quyền và nguồn đối chiếu; HANDOFF.md |
 
-## AIM-01 — nhiệm vụ AIMICA kế tiếp duy nhất
+## AIM-01 — phạm vi cập nhật được TJ duyệt
 
-- **Đầu vào:** AIMICA_DISCOVERY.md, LAB_ANCHOR.md và chỉ đạo mới của TJ cho phép Phase 1.
-- **Cách làm sau khi được phép:** trao đổi nội bộ với TJ để chọn mục tiêu kinh doanh cần hỏi, đầu mối xác minh, kênh/dữ liệu được phép tiếp cận và các điểm chưa biết. Không tự gửi câu hỏi cho khách.
-- **Đầu ra:** cập nhật AIMICA_DISCOVERY.md với câu trả lời có nguồn hoặc nhãn chưa xác minh; ghi phạm vi TJ duyệt và phần cần khách xác nhận.
-- **Hoàn thành khi:** TJ xác nhận phạm vi khảo sát nội bộ; quyền truy cập hoặc xác nhận của khách còn thiếu được ghi đúng là thiếu. Nếu chưa chốt, giữ nhiệm vụ chưa hoàn tất.
-- **Không bao gồm:** khảo sát hệ thống thật, kiểm thử chatbot, liên hệ khách, đề xuất hợp đồng như đã được chấp thuận.
+- **Căn cứ:** chỉ đạo “PHASE 1 — AIM-01: AIMICA BUSINESS DISCOVERY” ngày 2026-11-25 thay phạm vi nháp của nhiệm vụ, cho phép desk research và tài liệu, không yêu cầu giả định đã phỏng vấn hoặc khách duyệt.
+- **Đầu vào:** các file Phase 0, commit 83cd364 và website công khai do TJ chỉ định.
+- **Đầu ra hoàn tất:** brief có URL và nhãn chắc chắn; phân tích ba nhóm; 15 câu hỏi; ba hướng AI; 5 bài học; trạng thái và handoff đã cập nhật.
+- **Giới hạn:** chưa có trả lời phỏng vấn, KPI nền, chính sách thù lao, quyền dữ liệu hoặc requirements phía khách. DONE không có nghĩa discovery với khách đã kết thúc.
+- **Không bao gồm:** kiểm thử hệ thống/chatbot/Zalo, điều khiển Chrome, liên hệ khách, xây ứng dụng, Phase 2, API trả phí, commit/push.
 
-Không tạo nhiệm vụ AIMICA kế tiếp thứ hai trước khi TJ đổi phạm vi. Khi nhận việc, kiểm tra owner và thay đổi hiện có rồi cập nhật trạng thái; sau khi xong ghi bằng chứng và handoff.
+## Bước AIMICA tiếp theo duy nhất — chờ TJ
+
+**AIM-02 — chỉ chuẩn bị, không bắt đầu trong checkpoint này.** AIM-01 đã đóng sau khi TJ xem báo cáo; Human Review tại HUMAN_REVIEW.md, quyết định D-001 trong PROJECT_STATUS.md. Việc ghi task không cấp quyền kiểm thử.
+
+- **Đầu vào cần chốt:** link/định danh OA đúng, tài khoản và quyền sử dụng; nhóm sản phẩm/tình huống và giới hạn lượt; cách kiểm tra được phép; tài liệu đối chiếu đúng phiên bản/người xác nhận; quyền lưu, người xem và thời hạn lưu bằng chứng.
+- **AGY làm sau khi TJ ra lệnh bắt đầu:** kiểm tra repo/handoff, nhận owner, ghi thời điểm và đối tượng thực tế; thu chuỗi hỏi–đáp và ảnh theo tình huống khách mua trong phạm vi đã chốt. Không kiểm thử tự động Zalo khi chưa có quyền riêng rõ ràng.
+- **Mục tiêu quan sát:** bot hiểu/hỏi lại nhu cầu ra sao, giải thích quyền lợi và giới hạn có căn cứ không, có lời hứa vượt nguồn không, và có chuyển người hữu ích không. Đây là mục tiêu thu bằng chứng, chưa phải rubric hay ngưỡng nghiệm thu khách duyệt.
+- **Đầu ra:** chỉ mục evidence và bằng chứng đã ẩn danh theo HANDOFF.md; tách quan sát, giả thuyết và phần không đủ nguồn. Thiếu đáp án chuẩn thì ghi UNKNOWN, không tự kết luận đúng/sai nghiệp vụ.
+- **Hoàn tất khi:** mỗi tình huống trong phạm vi được duyệt có chuỗi hội thoại/ngữ cảnh/thời điểm và nguồn ảnh đối chiếu được, hoặc lý do không thu được; dữ liệu được kiểm tra/ẩn danh; Board/Status/Handoff cập nhật để TJ review. Không suy ra bot đạt chất lượng tổng thể.
+- **Ranh giới:** không mua/đóng phí/nộp hồ sơ thật, không dùng dữ liệu khách thật, không tự mở phạm vi, thay đổi bot hay yêu cầu sản phẩm; không commit/push nếu chưa có lệnh riêng. Không tự bắt đầu Phase 2 từ nhiệm vụ này.

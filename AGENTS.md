@@ -7,7 +7,7 @@
 - Đọc LAB_ANCHOR.md, PROJECT_STATUS.md, TASK_BOARD.md và HANDOFF.md trước khi chọn việc.
 - Kiểm tra đường dẫn và Git: `git rev-parse --show-toplevel`, `git status --short --branch`, `git worktree list --porcelain`, `git remote -v`. Kiểm tra refs/commit nếu có. Không coi checkout đang mở là bản mới nhất khi có worktree hoặc nhánh khác.
 - Đọc hướng dẫn áp dụng ở thư mục cha và thư mục con liên quan. Nếu thực tế khác tài liệu, ghi chênh lệch; không tự sửa lịch sử để khớp báo cáo.
-- Hiện TJ chỉ duyệt Phase 0. Phase 0 đã hoàn tất thì dừng, chờ chỉ đạo mới; không tự bắt đầu AIM-01.
+- Quyền hiện tại: AIM-01 đã đóng; TJ duyệt ghi quyết định ưu tiên và tạo checkpoint Git riêng cho AIM-01. AIM-02 chỉ được lập nhiệm vụ/handoff, chưa được bắt đầu. Xem Decision Log trong PROJECT_STATUS.md; không tự chạy Zalo, kiểm thử hệ thống, liên hệ khách hoặc mở Phase 2.
 
 ## Trước khi sửa
 

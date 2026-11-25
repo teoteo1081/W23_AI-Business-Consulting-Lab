@@ -1,11 +1,11 @@
 # Kế hoạch hai track
 
-Mọi mốc sau Phase 0 dưới đây là **đề xuất chưa được duyệt thực hiện**. Không có cam kết tiến độ, chi phí hay kết quả với AIMICA.
+TJ đã đóng AIM-01 sau nghiên cứu công khai và review. Quyết định hiện hành: ưu tiên QA chatbot Zalo hiện hữu từ góc nhìn khách mua; Sales/CTV và KPI là hướng phụ, chưa chốt triển khai. AIM-02 chỉ được chuẩn bị, chưa bắt đầu. Phase 2–3 vẫn là **đề xuất chưa được duyệt thực hiện**. Không có cam kết tiến độ, chi phí hay kết quả với AIMICA.
 
 | Mốc | Track A — AIMICA và chuẩn bị tư vấn | Track B — học và phương pháp dùng lại | Điều kiện chuyển mốc |
 |---|---|---|---|
-| Phase 0 — hiện tại | Bộ câu hỏi discovery nháp; xác định ranh giới quyền hạn | Anchor, hướng dẫn AI, mẫu Wheel Check, daily summary | Đủ bộ tài liệu và kiểm chứng local; dừng tại đây |
-| Phase 1 — đề xuất | TJ rà soát câu hỏi, xác định đầu mối, mục tiêu và phạm vi khảo sát | TJ thực hành tách sự thật/giả định; ghi cách hỏi và nguồn bằng chứng | TJ cho phép bắt đầu; phạm vi và cách thu thập dữ liệu được ghi rõ trước khảo sát |
+| Phase 0 — đã hoàn tất | Bộ câu hỏi discovery nháp; xác định ranh giới quyền hạn | Anchor, hướng dẫn AI, mẫu Wheel Check, daily summary | Checkpoint 83cd364; không viết lại bằng chứng cũ |
+| Phase 1 — AIM-01 đã hoàn tất/review | Nghiên cứu công khai, ba nhóm người dùng, 15 câu hỏi, ba use case; TJ chọn QA hiện trạng làm trọng tâm | 5 bài học về business/AI và phân biệt bằng chứng/giả thuyết | AIM-02 đã lập nhưng chờ lệnh bắt đầu/phạm vi cụ thể; chưa có khách xác nhận |
 | Phase 2 — đề xuất | Đánh giá chatbot trên kênh, dữ liệu và cách kiểm tra được phép; nêu giới hạn mẫu | Xây và hiệu chỉnh rubric, cách lưu bằng chứng, phân biệt lỗi và điều chưa biết | Có quyền kiểm tra cụ thể, tiêu chí và bộ mẫu phù hợp; không suy ra quyền production |
 | Phase 3 — đề xuất | Chuyển phát hiện thành yêu cầu IT, tiêu chí nghiệm thu và đề xuất phạm vi hợp đồng | Chuẩn hóa discovery, đánh giá, yêu cầu IT, ước lượng và bàn giao | TJ duyệt nội bộ; chỉ ghi khách duyệt khi có xác nhận thật |
 
@@ -21,4 +21,4 @@ Inventory và đường dẫn thực tế ở PROJECT_STATUS.md. `execution-cont
 
 ## Nhiệm vụ kế tiếp duy nhất
 
-`AIM-01` được mô tả trong TASK_BOARD.md. Các mốc trên là lộ trình, không phải danh sách việc đang được phép tự chạy.
+`AIM-02 — Current Chatbot QA Evidence Collection` do AGY dự kiến thực hiện, chờ TJ chốt phạm vi và ra lệnh bắt đầu như TASK_BOARD.md/HANDOFF.md ghi nhận. Các mốc sau là lộ trình, không phải danh sách việc được phép tự chạy.

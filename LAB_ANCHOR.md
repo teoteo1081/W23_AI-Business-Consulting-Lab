@@ -8,7 +8,11 @@ TJ có thể hiểu bài toán kinh doanh, đánh giá chatbot có bằng chứn
 
 ## Phạm vi được duyệt hiện tại
 
-**Chỉ Phase 0:** kiểm tra thư mục/Git, tạo repo local nếu độc lập, tạo tài liệu tối thiểu, kiểm kê skill, lập kế hoạch và chuẩn bị bàn giao. Lệnh bootstrap của TJ là căn cứ duyệt cho phạm vi này.
+**Cập nhật ngày 2026-11-25 — TJ chỉ đạo “AIM-01 — DISCOVERY DECISION & CHECKPOINT”:** đóng AIM-01, ghi Human Review/quyết định và tạo commit riêng sau kiểm tra, không push. Ưu tiên chính: đánh giá chatbot AIMICA hiện hữu trên Zalo từ góc nhìn khách mua bảo hiểm; hướng Sales/CTV và quản lý KPI là nghiên cứu phụ, chưa quyết định triển khai. Chỉ chuẩn bị AIM-02 và handoff AGY, chưa cho phép bắt đầu hoặc tự chạy Zalo. Decision Log trong PROJECT_STATUS.md là căn cứ; không thay mục tiêu Lab hay suy ra khách duyệt requirements.
+
+**Cập nhật quyền ngày 2026-11-25 — TJ duyệt trong chỉ đạo “PHASE 1 — AIM-01”:** cho phép khôi phục ngữ cảnh, nghiên cứu nguồn công khai AIMICA, phân tích ba nhóm người dùng, soạn 15 câu hỏi, đề xuất tối đa ba use case và bài học; cập nhật tài liệu theo dõi. Không kiểm thử Zalo, điều khiển Chrome, xây ứng dụng, chạy Phase 2, gọi API trả phí hoặc tự commit/push. Đây là mở phạm vi do TJ duyệt, không phải khách duyệt requirements.
+
+**Phạm vi gốc Phase 0 (đã hoàn tất):** kiểm tra thư mục/Git, tạo repo local nếu độc lập, tạo tài liệu tối thiểu, kiểm kê skill, lập kế hoạch và chuẩn bị bàn giao. Lệnh bootstrap của TJ là căn cứ duyệt cho phạm vi này.
 
 Cho phép ghi tài liệu và cấu hình Git cục bộ trong project. Không có quyền suy ra hợp đồng, quyền truy cập hệ thống khách hoặc phê duyệt từ AIMICA.
 
@@ -28,7 +32,7 @@ Cho phép ghi tài liệu và cấu hình Git cục bộ trong project. Không c
 
 ## Ranh giới
 
-Không xây chatbot; không tự động kiểm thử Zalo; không cài dependencies không cần thiết; không gọi API trả phí; không đụng production; không sửa ngoài project; không tự commit/push; không lịch hoặc tiến trình nền. Phase 1 và việc liên hệ khách chưa được phép thực hiện.
+Không xây chatbot; không tự động kiểm thử Zalo; không cài dependencies không cần thiết; không gọi API trả phí; không đụng production; không sửa ngoài project; không tự commit/push; không lịch hoặc tiến trình nền. Phase 1 chỉ có quyền nghiên cứu/tài liệu nêu trên; Phase 2 và việc liên hệ khách chưa được phép thực hiện.
 
 ## Tiêu chí đóng Phase 0
 
