@@ -1,4 +1,10 @@
-# Handoff — AGY / AIM-02 (chưa bắt đầu)
+# Handoff — AGY / AIM-02 (Batch 01 hoàn tất — chờ quyết định Batch 02)
+
+## Cập nhật sau Batch 01 & Evidence Reconciliation — 2026-11-25
+
+- **Đã hoàn tất:** Research & QA Baseline (`AIMICA_RESEARCH_REVIEW.md`), Ground Truth Validation (PDF Quy tắc AAA 22 trang tại `private/aimica/AIM-02/reference/`), Live QA Batch 01 (`TC-01`, `TC-03A`, `TC-03B` theo xác nhận quyền của TJ), Independent Review của Codex (`AIM-02_INDEPENDENT_REVIEW_CODEX_2026-11-25.md`), đối soát `evidence_index.csv` và `QA_HANDOFF_SUMMARY.md` trong `private/aimica/AIM-02/`.
+- **Trạng thái hiện tại:** `PROVISIONAL` — chưa phải nghiệm thu chính thức và không gán Confirmed IT Defects.
+- **Bước tiếp theo:** Chờ TJ / Business Owner chốt các câu hỏi mở trong `private/aimica/AIM-02/QA_HANDOFF_SUMMARY.md` trước khi duyệt chạy Batch 02. Không tự gửi thêm tin Zalo, không commit/push.
 
 ## Handoff hiện hành — 2026-11-25
 

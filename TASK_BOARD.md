@@ -8,7 +8,7 @@ Cập nhật: 2026-11-25. Trạng thái: DONE = có kết quả và bằng chứ
 | P0-02 | Tạo bộ tài liệu tối thiểu và inventory skill | Codex | DONE | 11 file ở root; E03–E04 |
 | P0-03 | Kiểm chứng và bàn giao Phase 0 | Codex | DONE | E05–E06; HANDOFF.md |
 | AIM-01 | Business discovery từ nguồn công khai theo phạm vi TJ mở ngày 2026-11-25 | Codex | DONE | INDUSTRY_BRIEF.md, DISCOVERY_QUESTIONS.md, INITIAL_USE_CASES.md; P1-E01–E04 trong PROJECT_STATUS.md. Chỉ hoàn tất desk research, chưa phỏng vấn hoặc khách duyệt |
-| AIM-02 | Current Chatbot QA Evidence Collection — chatbot Zalo hiện hữu, góc nhìn khách mua bảo hiểm | AGY (dự kiến; chưa nhận/chạy việc) | WAITING_AUTHORIZATION | TJ đã chọn hướng QA; chưa ra lệnh thực hiện. Phải chốt đúng bot, phạm vi, quyền và nguồn đối chiếu; HANDOFF.md |
+| AIM-02 | Current Chatbot QA Evidence Collection — chatbot Zalo hiện hữu, góc nhìn khách mua bảo hiểm | AGY (Batch 01) / Codex (Independent Review) | IN_PROGRESS | Batch 01 (TC-01, TC-03A, TC-03B) đã chạy có kiểm soát ngày 2026-11-25 theo xác nhận quyền của TJ; Codex đã hoàn tất Independent Review; `evidence_index.csv` và `QA_HANDOFF_SUMMARY.md` đã đối soát ở trạng thái `PROVISIONAL` trong `private/aimica/AIM-02/`. Chưa nghiệm thu chính thức, chưa chạy Batch 02 |
 
 ## AIM-01 — phạm vi cập nhật được TJ duyệt
 
