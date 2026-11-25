@@ -1,0 +1,45 @@
+# Credentials and local environment (do not add a real secret to an example)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*service-account*.json
+*service_account*.json
+
+# Put private client material here, never in tracked planning documents
+/private/
+/confidential/
+/secrets/
+/client-data/
+/raw-data/
+*.har
+
+# Temporary files and local outputs
+/tmp/
+/temp/
+/scratch/
+/exports/
+*.tmp
+*.temp
+*.log
+*.bak
+~$*
+*.swp
+*.swo
+
+# Local editors / OS / caches
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
