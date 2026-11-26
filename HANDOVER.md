@@ -18,7 +18,7 @@
   - **A. Local Master Repository (`W23_AI-Business-Consulting-Lab`):** Bảo toàn toàn bộ lịch sử Git, tài sản nghiên cứu, tài liệu quản trị và `private/` (bị ignore) trên máy TJ.
   - **B. Private Sanitized Review Repository (dự kiến):** Xuất bản mới với lịch sử sạch (không mang email cá nhân trong commit cũ, không rewrite repo gốc), chỉ chứa allowlist được TJ duyệt sau sanitization, không chứa raw QA evidence.
 - **Local Checkpoint:** AGY chỉ stage tường minh 13 file tài liệu local đủ điều kiện (không dùng `git add .`, giữ `private/` ngoài Git) và tạo 1 local checkpoint commit an toàn theo quyền `D-004`.
-- **Cập nhật GitHub Push (`D-005` & `D-006`, 2026-11-26):** TJ đã xác nhận đẩy toàn bộ Local Master `main` cùng 32 file bằng chứng đã quét sạch PII/secret trong `private/aimica/AIM-02/` lên repository **PRIVATE** `teoteo1081/W23_AI-Business-Consulting-Lab` (chỉ riêng W23, giữ `/private/` trong `.gitignore` cho file phát sinh sau, không chạm W24 hay Batch 02).
+- **Cập nhật GitHub Push (`D-005`–`D-007`, 2026-11-26):** TJ đã duyệt đẩy toàn bộ Local Master `main` cùng 32 file trong `private/aimica/AIM-02/` lên `https://github.com/teoteo1081/W23_AI-Business-Consulting-Lab` và xác nhận chuyển visibility sang **PUBLIC** (`D-007`, sau cảnh báo công khai). Chỉ riêng W23, giữ `/private/` trong `.gitignore` cho file phát sinh sau, không chạm W24 hay Batch 02.
 - **Bước tiếp theo duy nhất:** Chờ TJ chốt các quyết định bảo mật/allowlist (phương án 2 repo, xử lý SEC-01..03) và các câu hỏi mở Business Owner/IT trước khi cấp quyền Batch 02 hoặc tạo Private Sanitized Review Repository.
 
 ---
