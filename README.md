@@ -1,5 +1,9 @@
 # TJ AI Business Consulting Lab
 
+## Checkpoint hợp nhất — 2026-11-26
+
+Đọc [Checkpoint Log](CHECKPOINT_LOG.md) → [AIM-03 Security Audit](AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md) → [Independent Audit Package](INDEPENDENT_AUDIT_PACKAGE.md). AIM-02 Batch 01 = PROVISIONAL; [AIM-04](AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md) đã bàn giao kế hoạch, chưa chạy Batch 02. Security/GitHub readiness BLOCKED; bản hợp nhất chưa commit/push. Chưa có remote hoặc PRIVATE visibility đã xác minh. Mục tiêu và yêu cầu khách chưa thay đổi. Các phần dưới giữ trạng thái checkpoint AIM-01, không phải tình trạng hiện hành; các lệnh `git log -1` cũ không còn định danh riêng commit AIM-01.
+
 Đây là nơi TJ học cách tư vấn ứng dụng AI cho doanh nghiệp: hiểu vấn đề, kiểm tra chatbot bằng bằng chứng, viết yêu cầu rõ cho IT và xây phương pháp dùng lại cho nhiều khách hàng.
 
 Repository thuộc TJ, **không phải source code của AIMICA**. AIMICA là case học đầu tiên; website do TJ cung cấp: https://aimica.vn/. Đã nghiên cứu nội dung công khai trong AIM-01; chưa đánh giá chatbot và chưa có xác nhận từ khách hàng.

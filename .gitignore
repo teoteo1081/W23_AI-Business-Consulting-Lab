@@ -18,6 +18,24 @@
 /raw-data/
 *.har
 
+# Local evidence and browser/auth exports outside private/
+/evidence/
+/local-evidence/
+/screenshots/
+/transcripts/
+/reference/
+cookies.json
+cookies.txt
+*cookies*.json
+*cookies*.txt
+.git-credentials
+.netrc
+_netrc
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
 # Temporary files and local outputs
 /tmp/
 /temp/

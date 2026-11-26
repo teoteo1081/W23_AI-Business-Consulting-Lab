@@ -1,5 +1,9 @@
 # Kế hoạch hai track
 
+## Cập nhật hiện hành — 2026-11-26
+
+AIM-01 đã đóng; AIM-02 Batch 01 PROVISIONAL đã được ghi nhận, chưa nghiệm thu. AIM-04 đã nghiên cứu/lập kế hoạch B2-01..B2-07; chưa được chạy. Hiện chỉ hợp nhất hồ sơ và chuẩn bị Independent Audit theo chỉ đạo TJ, không mở Phase 2 mới hoặc Batch 03. Xem CHECKPOINT_LOG.md và các phụ thuộc/rubric cần chốt trong INDEPENDENT_AUDIT_PACKAGE.md. Security/sharing BLOCKED; không commit/push trước điều kiện duyệt. Phần kế hoạch AIM-01 dưới đây là snapshot lịch sử, không cấp quyền thực thi.
+
 TJ đã đóng AIM-01 sau nghiên cứu công khai và review. Quyết định hiện hành: ưu tiên QA chatbot Zalo hiện hữu từ góc nhìn khách mua; Sales/CTV và KPI là hướng phụ, chưa chốt triển khai. AIM-02 chỉ được chuẩn bị, chưa bắt đầu. Phase 2–3 vẫn là **đề xuất chưa được duyệt thực hiện**. Không có cam kết tiến độ, chi phí hay kết quả với AIMICA.
 
 | Mốc | Track A — AIMICA và chuẩn bị tư vấn | Track B — học và phương pháp dùng lại | Điều kiện chuyển mốc |

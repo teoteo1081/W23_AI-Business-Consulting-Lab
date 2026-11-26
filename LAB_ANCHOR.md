@@ -1,5 +1,9 @@
 # Lab Anchor
 
+## Cập nhật hiện hành — 2026-11-26
+
+Theo chỉ đạo hợp nhất W23 của TJ, Codex tiếp nhận AIM-04 và chuẩn bị hồ sơ Independent Audit. Batch 01 được báo cáo PROVISIONAL; AIM-04 là kế hoạch chưa thực thi Batch 02. Audit security/sharing BLOCKED; chưa commit hoặc push phần hợp nhất. Chỉ được commit sau PASS; push cần TJ duyệt nội dung và thao tác riêng, đúng đích PRIVATE đã xác minh. Không thay mục tiêu Lab, không chạy batch/Phase 2 mới, không rewrite history hoặc thay đổi W24. CHECKPOINT_LOG.md là mốc hợp nhất; các phần phạm vi AIM-01 bên dưới là snapshot lịch sử. Chưa có yêu cầu khách duyệt.
+
 Chủ sở hữu: TJ. Ngày khởi tạo: 2026-11-25 (Asia/Saigon).
 
 ## Đích đến

@@ -1,5 +1,9 @@
 # Hướng dẫn chung cho mọi AI
 
+## Quyền hiện hành — hợp nhất W23, 2026-11-26
+
+TJ đã yêu cầu tiếp nhận AIM-04, lưu AIM-03, đối chiếu tài liệu và audit bảo mật; chỉ commit nếu security audit PASS. Hiện audit BLOCKED, không commit/push. Batch 01 đã được báo cáo PROVISIONAL; AIM-04 mới là research/planning. Không chạy Batch 02. Push chỉ sau khi TJ duyệt nội dung cụ thể và thao tác push tới repository PRIVATE đã xác minh; không force push/rewrite history hoặc thay đổi W24. Đọc CHECKPOINT_LOG.md và INDEPENDENT_AUDIT_PACKAGE.md trước các snapshot dưới đây. Quyền cũ ghi AIM-02 chưa bắt đầu chỉ phản ánh checkpoint AIM-01, không phải trạng thái QA mới nhất. Không coi báo cáo quyền Batch 01 là quyền chia sẻ evidence ngoài máy.
+
 Áp dụng cho Codex, Claude, AGY và AI khác làm việc trong repository này. Chủ sở hữu và người duyệt phạm vi: TJ.
 
 ## Bắt đầu phiên làm việc

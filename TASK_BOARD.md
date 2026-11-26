@@ -1,6 +1,6 @@
 # Task Board
 
-Cập nhật: 2026-11-25. Trạng thái: DONE = có kết quả và bằng chứng; WAITING_AUTHORIZATION = chưa được phép bắt đầu; IN_PROGRESS = đã được duyệt và có owner; BLOCKED = có trở ngại thực tế được ghi rõ.
+Cập nhật: 2026-11-26. Trạng thái: DONE = có kết quả và bằng chứng; WAITING_AUTHORIZATION = chưa được phép bắt đầu; IN_PROGRESS = đã được duyệt và có owner; BLOCKED = có trở ngại thực tế được ghi rõ.
 
 | ID | Nhiệm vụ | Owner | Trạng thái | Bằng chứng / điều kiện |
 |---|---|---|---|---|
@@ -9,6 +9,12 @@ Cập nhật: 2026-11-25. Trạng thái: DONE = có kết quả và bằng chứ
 | P0-03 | Kiểm chứng và bàn giao Phase 0 | Codex | DONE | E05–E06; HANDOFF.md |
 | AIM-01 | Business discovery từ nguồn công khai theo phạm vi TJ mở ngày 2026-11-25 | Codex | DONE | INDUSTRY_BRIEF.md, DISCOVERY_QUESTIONS.md, INITIAL_USE_CASES.md; P1-E01–E04 trong PROJECT_STATUS.md. Chỉ hoàn tất desk research, chưa phỏng vấn hoặc khách duyệt |
 | AIM-02 | Current Chatbot QA Evidence Collection — chatbot Zalo hiện hữu, góc nhìn khách mua bảo hiểm | AGY (Batch 01) / Codex (Independent Review) | IN_PROGRESS | Batch 01 (TC-01, TC-03A, TC-03B) đã chạy có kiểm soát ngày 2026-11-25 theo xác nhận quyền của TJ; Codex đã hoàn tất Independent Review; `evidence_index.csv` và `QA_HANDOFF_SUMMARY.md` đã đối soát ở trạng thái `PROVISIONAL` trong `private/aimica/AIM-02/`. Chưa nghiệm thu chính thức, chưa chạy Batch 02 |
+| AIM-04 | Chatbot Customer Journey & Batch 02 Planning (Research & Planning, bàn giao Codex) | AGY | DONE | `AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md` (Customer Journey Gap Analysis, Public Benchmark & Wheel Check, Batch 02 Test Matrix B2-01..B2-07, Human Handoff Assessment Framework, Unresolved Questions). Chưa chạy live Batch 02; chưa commit/push; dừng tại Handover Checkpoint cho Codex |
+| AIM-03 | Security/GitHub readiness và hợp nhất checkpoint theo chỉ đạo W23 | Codex | BLOCKED | Báo cáo đã lưu; CHECKPOINT_LOG.md và INDEPENDENT_AUDIT_PACKAGE.md. Bàn giao AIM-04 đã đọc, CONS-01..09 cần chốt; security/sharing chưa PASS nên chưa commit/push |
+
+## Bước hiện hành duy nhất — 2026-11-26
+
+**AIM-03 CHECKPOINT 02:** chờ TJ chốt disposition bảo mật và allowlist gói Independent Audit; không mở task/batch mới. AIM-04 của AGY được giữ nguyên, không nhận lại owner của AGY. Các mục “bước AIMICA tiếp theo” dưới đây là snapshot AIM-01 trước Batch 01; Batch 02 hiện chưa được phép chạy. Commit chỉ sau security PASS, push cần phê duyệt riêng và PRIVATE visibility đã xác minh.
 
 ## AIM-01 — phạm vi cập nhật được TJ duyệt
 

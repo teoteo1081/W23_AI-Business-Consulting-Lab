@@ -1,4 +1,22 @@
-# Handoff — AGY / AIM-02 (Batch 01 hoàn tất — chờ quyết định Batch 02)
+# Handoff — AIM-04 Handover Checkpoint cho Codex (Chờ duyệt Batch 02)
+
+## Handoff hiện hành — Codex consolidated checkpoint — 2026-11-26
+
+- **Đã tiếp nhận:** đọc toàn bộ AIM-04 và diff ba file điều phối AGY. Giữ nguyên file AIM-04; không chấm lại Batch 01 hoặc thay rubric được duyệt. Ghi CONS-01..09 riêng trong INDEPENDENT_AUDIT_PACKAGE.md.
+- **Đã lưu:** AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md, INDEPENDENT_AUDIT_PACKAGE.md, CHECKPOINT_LOG.md; cập nhật các đầu mối quản trị và củng cố .gitignore. Không chuyển hoặc sửa bằng chứng private.
+- **Kết quả:** Security/GitHub readiness BLOCKED; credential pattern scan chưa thấy secret, nhưng metadata email/nội dung pilot/trích lời bot và quyền chia sẻ chưa đóng. Không commit/push; main vẫn `623c5185b98d5efc1131d8d5928779ae7891cd30`. Không remote; URL/visibility NOT VERIFIED. Thay đổi mới còn local modified/untracked.
+- **Đọc tiếp:** CHECKPOINT_LOG.md → AIM-03 report → INDEPENDENT_AUDIT_PACKAGE.md → PROJECT_STATUS.md. Báo cáo trước của AI là nguồn cần đối chiếu, không phải kết quả audit độc lập mới. Evidence gốc không nằm trong Git; không force-add hoặc upload vì nhãn redacted.
+- **Một bước tiếp theo:** TJ chốt disposition bảo mật/allowlist tại AIM-03 CHECKPOINT 02; khi đủ điều kiện mới audit lại và dùng quyền commit có điều kiện. Push vẫn cần TJ xác nhận nội dung và duyệt thao tác tới PRIVATE repository đã xác minh. Không tự chạy Batch 02, liên hệ khách hoặc thay đổi W24.
+- **Snapshot:** các phần bên dưới bảo toàn bàn giao AGY và lịch sử; mô tả số file/quyền pre-QA tại đó không phải trạng thái hiện hành.
+
+## Cập nhật AIM-04 — Handover Checkpoint cho Codex — 2026-11-26
+
+- **Người bàn giao:** AGY | **Người tiếp nhận:** Codex | **Trạng thái:** `HANDOVER CHECKPOINT` (chưa commit, chưa push).
+- **Đầu ra chính:** [AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md](AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md) — tổng hợp đầy đủ Customer Journey Gap Analysis, Public Benchmark Research (8 lĩnh vực kèm link nguồn), Wheel Check (không cài thêm tool), Ma trận kiểm thử Batch 02 (`B2-01`–`B2-07` xếp hạng theo Giá trị KD / Rủi ro / Công sức, dùng 100% dữ liệu giả lập), Khung đánh giá Human Handoff, Rủi ro và Câu hỏi mở cho Business Owner & IT.
+- **Kỷ luật bằng chứng:** Phân biệt rõ `VERIFIED FACTS`, `OBSERVATIONS (PROVISIONAL)`, `HYPOTHESES`, `UNKNOWNS`, `RECOMMENDATIONS (NOT CLIENT APPROVED)` và `VALIDATED DEFECTS = 0`. Không chứa PII, không chứa dữ liệu khách hàng thật.
+- **Bảo toàn công việc Codex:** Không chỉnh sửa báo cáo Independent Review hay các kết quả của Codex.
+- **Tình trạng Git:** Nền `main` @ `623c518`; hiện có 1 file mới (`AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md`) và 3 file điều phối cập nhật (`TASK_BOARD.md`, `PROJECT_STATUS.md`, `HANDOFF.md`) ở working tree, chưa stage/commit/push.
+- **Bước tiếp theo cho Codex / TJ:** Codex tiếp nhận rà soát tài liệu AIM-04; chờ TJ / Business Owner chốt các câu hỏi mở và quyết định danh sách Batch 02 (`B2-01`–`B2-03` ưu tiên nhanh hoặc đủ 7 ca) trước khi cấp quyền live QA.
 
 ## Cập nhật sau Batch 01 & Evidence Reconciliation — 2026-11-25
 

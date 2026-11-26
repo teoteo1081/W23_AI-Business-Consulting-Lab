@@ -1,5 +1,43 @@
 # Project Status
 
+## Hiện hành — Cross-Agent Handover (Codex → AGY) & Safe Local Checkpoint — 2026-11-26
+
+- **Căn cứ:** Chỉ đạo “W23 — CROSS-AGENT HANDOVER: CODEX → AGY” ngày 2026-11-26 (Decision `D-004`). TJ chuyển quyền thực thi W23 từ Codex sang AGY, cho phép kiểm chứng Git, phân loại bảo mật/chia sẻ, đề xuất kiến trúc 2 repository, cập nhật `HANDOVER.md`/`PROJECT_STATUS.md` và tạo **local checkpoint commit an toàn**; nghiêm cấm push GitHub, tạo remote, rewrite history, sửa W24 hoặc chạy Batch 02.
+- **Đối chiếu & Tiếp quản:** Xác nhận thực tế repo khớp báo cáo Codex (`main` @ `623c518`, 8 modified, 5 untracked, 0 remote, 32 file trong `private/` bị ignore, `git fsck` sạch). Bảo toàn 100% công việc hợp lệ của Codex (`AIM-03`, `CHECKPOINT_LOG.md`, `INDEPENDENT_AUDIT_PACKAGE.md`, `.gitignore`, cập nhật quản trị) và `AIM-04` của AGY.
+- **Trạng thái bảo mật & kiểm thử (GIỮ NGUYÊN):**
+  - **Security & Sharing Audit:** `BLOCKED` cho việc chia sẻ ngoài máy / push GitHub (tồn tại SEC-01 metadata email trong lịch sử cũ, SEC-02 thông tin pilot/đường dẫn local trong `AIMICA_RESEARCH_REVIEW.md`, SEC-03 trích lời bot trong `AIM-02_HUMAN_REVIEW.md`, và chưa có allowlist/quyền chia sẻ evidence được TJ duyệt).
+  - **AIM-02 Batch 01:** `PROVISIONAL` (`TC-01`, `TC-03A`, `TC-03B`; `Confirmed IT Defects = 0`).
+  - **Batch 02:** Chưa chạy, chưa được cấp quyền thực thi.
+- **Local Checkpoint:** Stage tường minh danh sách file tài liệu hợp lệ (không `git add .`, không chạm `private/`) để tạo local checkpoint commit bảo toàn công việc Codex + AGY trên **Local Master Repository**. Không phải phê duyệt chia sẻ hay push.
+- **Kiến trúc lưu trữ đề xuất:** Tách bạch **A. Local Master Repository** (nội bộ, giữ đủ lịch sử & evidence bị ignore) và **B. Private Sanitized Review Repository** (lịch sử mới sạch metadata, chỉ chứa allowlist đã sanitize và được TJ duyệt — chưa tạo trên GitHub).
+
+| ID | Người/ngày/căn cứ | Quyết định | Ranh giới |
+|---|---|---|---|
+| D-004 | TJ, 2026-11-26, “W23 — CROSS-AGENT HANDOVER: CODEX → AGY” | Chuyển giao quyền thực thi W23 từ Codex sang AGY; cho phép audit bảo mật local, đề xuất kiến trúc 2 repo, cập nhật `HANDOVER.md`/`PROJECT_STATUS.md` và tạo local checkpoint commit an toàn | Giữ Security Audit = `BLOCKED`, Batch 01 = `PROVISIONAL`; không push, không tạo remote, không rewrite history, không sửa W24, không chạy Batch 02 |
+
+## Hiện hành — Consolidated Checkpoint / Independent Audit — 2026-11-26
+
+- **Căn cứ mới:** TJ yêu cầu hợp nhất AIM-03 của Codex và AIM-04 của AGY, lưu báo cáo, đối chiếu hồ sơ, quét toàn bộ tracked files/history và chỉ commit nếu security PASS. Chưa duyệt nội dung chia sẻ hoặc push. Không thay đổi W24.
+- **Kết quả:** AIM-03 đã lưu tại [Security Audit](AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md); toàn bộ file AIM-04 và ba diff điều phối đã được tiếp nhận. Bản AIM-04 của AGY giữ nguyên; review consistency/rubric CONS-01..09 trong [Independent Audit Package](INDEPENDENT_AUDIT_PACKAGE.md). Không phát sinh kết quả chatbot mới.
+- **Security/GitHub readiness: BLOCKED.** Không thấy credential theo mẫu quét, nhưng metadata email cá nhân, thông tin pilot/trích lời bot và quyền chia sẻ evidence chưa được giải quyết. Không commit/push. Không remote; GitHub search đúng tên không có kết quả trong phạm vi connector, URL/visibility chưa xác minh.
+- **Git:** main @ `623c5185b98d5efc1131d8d5928779ae7891cd30`; các file bàn giao/hợp nhất còn modified/untracked, không có commit mới. [Checkpoint Log](CHECKPOINT_LOG.md) ghi kết quả và bước tiếp theo; không coi tài liệu local là đã backup ngoài máy.
+- **Trạng thái nghiệp vụ:** AIM-01 DONE desk research; AIM-02 IN_PROGRESS/PROVISIONAL, ba ca Batch 01; AIM-04 DONE research/planning do AGY, Codex đã review tài liệu, chưa chạy Batch 02. Confirmed IT Defects = 0; chưa có requirements khách duyệt. Bằng chứng PDF/ảnh được tái kiểm hash, không tái xác nhận nội dung hoặc tuân thủ pháp luật.
+- **Bước tiếp theo duy nhất:** AIM-03 CHECKPOINT 02 — TJ chốt disposition bảo mật, allowlist và gói chia sẻ. Phần sau giữ snapshot bàn giao/lịch sử; không dùng câu “chưa bắt đầu AIM-02” làm trạng thái hiện hành.
+
+### Quyết định mới — không bổ sung quyền quá khứ
+
+| ID | Người/ngày/căn cứ | Quyết định | Ranh giới |
+|---|---|---|---|
+| D-003 | TJ, 2026-11-26, “W23 — CONSOLIDATED CHECKPOINT & GITHUB READINESS” trong hội thoại | Lưu AIM-03, tiếp nhận AIM-04, hợp nhất tài liệu và security audit; commit tài liệu an toàn khi PASS | FAIL/BLOCKED thì dừng trước commit; push cần xác nhận nội dung và phê duyệt thao tác riêng, chỉ PRIVATE; không rewrite/force push/W24 |
+
+Quyền chạy Batch 01 được thuật lại trong hồ sơ AIM-02; chưa có bản tóm tắt phê duyệt đầy đủ để kiểm độc lập mọi giới hạn. Không dựng thêm decision log ngày cũ hoặc suy ra consent chia sẻ. AIM-04 được thuật lại là đóng theo chỉ đạo TJ trong handover AGY; việc tiếp nhận hôm nay không nghiệm thu rubric hoặc nguồn benchmark.
+
+## Cập nhật AIM-04 — Research & Batch 02 Planning Handover — 2026-11-26
+
+- **AIM-04: DONE (Handover Checkpoint cho Codex).** Theo lệnh `CLOSE CHECKPOINT AIM-04` của TJ, AGY đã tổng hợp toàn bộ kết quả nghiên cứu và lập kế hoạch Batch 02 vào [AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md](AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md) (gồm Epistemic Classification, Customer Journey Gap Analysis, Public Benchmark Research có link nguồn, Wheel Check, Batch 02 Test Matrix `B2-01`–`B2-07`, Human Handoff Assessment Framework, Risks và Unresolved Questions).
+- **Mốc Git nền:** `main` @ `623c5185b98d5efc1131d8d5928779ae7891cd30` (`docs: record aimica batch01 provisional assessment`), 1 worktree, không remote. Các thay đổi AIM-04 hiện nằm trong working tree (untracked/modified), **chưa stage, chưa commit, chưa push** theo đúng chỉ đạo.
+- **Bảo toàn & Ranh giới:** Không sửa kết quả của Codex; không gửi tin nhắn lên chatbot live; không chứa dữ liệu nhạy cảm hay thông tin khách hàng thật; giữ nguyên trạng thái `Validated Defects = 0` và chưa có yêu cầu được khách hàng phê duyệt. Dừng tại Handover Checkpoint cho Codex và chờ Business Owner / TJ duyệt trước Batch 02.
+
 ## Hiện tại — đóng AIM-01 / chuẩn bị AIM-02 — 2026-11-25
 
 - **AIM-01: CLOSED / DONE.** TJ đã xem báo cáo và chốt ưu tiên trong chỉ đạo “AIM-01 — DISCOVERY DECISION & CHECKPOINT”. Đóng nhiệm vụ nghiên cứu/tài liệu; không đồng nghĩa đã phỏng vấn khách hoặc khách duyệt requirements.
