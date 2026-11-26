@@ -1,0 +1,41 @@
+[
+  {
+    "case_id": "TC-01",
+    "evidence_id": "EV-TC-01",
+    "captured_at_timezone": "2026-11-25T12:02:45.578449+07:00",
+    "sent_at_timezone": "2026-11-25T12:02:27.802330+07:00",
+    "bot_identifier": "Bot AI Assistant 01 (Zalo pilot)",
+    "context": "AIM-02 Live QA Batch 01 (in-session sequential)",
+    "prompt": "Mình muốn tìm gói bảo hiểm cho cả nhà 4 người (2 vợ chồng 32 tuổi, 2 con nhỏ), tài chính vừa phải.",
+    "response": "Với gia đình 4 người và muốn tiết kiệm, anh/chị có thể cân nhắc Bảo hiểm Tai Nạn Hộ Gia Đình, nếu ưu tiên bảo vệ trước tai nạn.\nGói Cơ Bản: 500.000 ₫/hộ/năm, số tiền bảo hiểm 30.000.000 ₫/người.\nGói Nâng Cao: 800.000 ₫/hộ/năm, số tiền bảo hiểm 50.000.000 ₫/người. Em nghiêng về gói này nếu mức phí phù hợp; chọn Cơ Bản nếu ưu tiên tiết kiệm.\nVí dụ minh họa, không thay bảng quyền lợi chính thức: gói Nâng Cao chi trả 50.000.000 ₫/người khi tử vong do tai nạn thuộc phạm vi bảo hiểm; đây không phải cam kết trả 100% viện phí.\nPhí tính theo hộ, không theo số người; các thành viên phải có cùng thông tin cư trú với chủ hộ/bên mua theo quy định pháp luật tại thời điểm tham gia.\nĐây là giá tham khảo, phí chính xác tính khi mua trên website aimica.vn hoặc trong ứng dụng AIMICA. Anh/chị ưu tiên bảo vệ tai nạn hay chi phí chữa bệnh, và hai bé hiện bao nhiêu tuổi?\n1. Xem đầy đủ các gói Tai Nạn Hộ Gia Đình.\n2. Xem hồ sơ bồi thường Tai Nạn Hộ Gia Đình.",
+    "image_path": "C:\\Users\\User\\Desktop\\TJ\\Project\\W23_AI-Business-Consulting-Lab\\private\\aimica\\AIM-02\\redacted\\TC-01.png",
+    "reference_source": "aimica.vn/products + Rubric Needs Discovery",
+    "redaction_status": "CROPPED_SIDEBAR_NO_PII"
+  },
+  {
+    "case_id": "TC-03A",
+    "evidence_id": "EV-TC-03A",
+    "captured_at_timezone": "2026-11-25T12:03:05.089921+07:00",
+    "sent_at_timezone": "2026-11-25T12:02:48.733498+07:00",
+    "bot_identifier": "Bot AI Assistant 01 (Zalo pilot)",
+    "context": "AIM-02 Live QA Batch 01 (in-session sequential)",
+    "prompt": "Gói Bảo hiểm Tai nạn Hộ gia đình của AIMICA có bảo vệ khi mình đi du lịch Thái Lan không? Bạn dựa vào điều khoản nào?",
+    "response": "Không, anh/chị nhé. Tai Nạn Hộ Gia Đình không bảo vệ cho sự kiện tai nạn xảy ra tại Thái Lan theo phạm vi hiện được cung cấp.\n\nCăn cứ là mục “Tai Nạn Hộ Gia Đình — Phạm vi bảo hiểm”, ghi rõ: “Giới hạn địa lý: cho các sự kiện bảo hiểm trong lãnh thổ Việt Nam.”\n\nEm chưa có số điều/khoản của bản Quy tắc bảo hiểm để dẫn chính xác. Anh/chị có thể đối chiếu bản chính thức tại mục “Tài liệu & Biểu mẫu” trên trang sản phẩm ở aimica.vn hoặc gọi 1900 8888 68 (8:00–20:00, Thứ 2–Chủ nhật).\n\n1. Xem các trường hợp loại trừ của Tai Nạn Hộ Gia Đình.\n2. Xem hồ sơ bồi thường Tai Nạn Hộ Gia Đình.",
+    "image_path": "C:\\Users\\User\\Desktop\\TJ\\Project\\W23_AI-Business-Consulting-Lab\\private\\aimica\\AIM-02\\redacted\\TC-03A.png",
+    "reference_source": "aimica.vn/products/spbh-tai-nan-ho-gia-dinh + PDF QTBH AAA (Dieu 2 tr.6, Ghi chu tr.8)",
+    "redaction_status": "CROPPED_SIDEBAR_NO_PII"
+  },
+  {
+    "case_id": "TC-03B",
+    "evidence_id": "EV-TC-03B",
+    "captured_at_timezone": "2026-11-25T12:03:22.582311+07:00",
+    "sent_at_timezone": "2026-11-25T12:03:08.034594+07:00",
+    "bot_identifier": "Bot AI Assistant 01 (Zalo pilot)",
+    "context": "AIM-02 Live QA Batch 01 (in-session sequential)",
+    "prompt": "Nếu người được bảo hiểm uống rượu bia rồi tự lái xe máy bị tai nạn thì gói Bảo hiểm Tai nạn Hộ gia đình có chi trả không? Điều kiện loại trừ cụ thể là gì?",
+    "response": "Anh/chị sẽ không được chi trả nếu trường hợp tai nạn thuộc các điều khoản loại trừ sau của Tai Nạn Hộ Gia Đình:\n“Người được bảo hiểm vi phạm pháp luật, vi phạm luật an toàn giao thông, vi phạm quy định về an toàn lao động.”\n“Người được bảo hiểm có sử dụng/ bị ảnh hưởng bởi rượu, bia hoặc các chất kích thích, các chất gây nghiện khác là nguyên nhân dẫn đến tai nạn.”\n\nRiêng điều khoản rượu bia có nêu điều kiện “là nguyên nhân dẫn đến tai nạn”; em không thể kết luận chỉ từ thông tin đã uống rượu bia. Cũng cần đối chiếu riêng điều khoản vi phạm luật an toàn giao thông.\nTài liệu hiện có chưa nêu ngưỡng nồng độ cồn hay cách xác định nguyên nhân. Anh/chị xem Quy tắc bảo hiểm tại “Tài liệu & Biểu mẫu” trên trang sản phẩm ở aimica.vn hoặc gọi 1900 8888 68 (8:00–20:00, Thứ 2–Chủ nhật) để xác nhận trường hợp cụ thể.\n1. Xem đầy đủ loại trừ của Tai Nạn Hộ Gia Đình.\n2. Xem hồ sơ bồi thường Tai Nạn Hộ Gia Đình.",
+    "image_path": "C:\\Users\\User\\Desktop\\TJ\\Project\\W23_AI-Business-Consulting-Lab\\private\\aimica\\AIM-02\\redacted\\TC-03B.png",
+    "reference_source": "aimica.vn/products/spbh-tai-nan-ho-gia-dinh + PDF QTBH AAA (Dieu 9 khoan 2-3 tr.7, Dieu 16 tr.10-11)",
+    "redaction_status": "CROPPED_SIDEBAR_NO_PII"
+  }
+]
