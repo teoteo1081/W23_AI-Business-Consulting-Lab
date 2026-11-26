@@ -14,6 +14,7 @@
 | ID | Người/ngày/căn cứ | Quyết định | Ranh giới |
 |---|---|---|---|
 | D-004 | TJ, 2026-11-26, “W23 — CROSS-AGENT HANDOVER: CODEX → AGY” | Chuyển giao quyền thực thi W23 từ Codex sang AGY; cho phép audit bảo mật local, đề xuất kiến trúc 2 repo, cập nhật `HANDOVER.md`/`PROJECT_STATUS.md` và tạo local checkpoint commit an toàn | Giữ Security Audit = `BLOCKED`, Batch 01 = `PROVISIONAL`; không push, không tạo remote, không rewrite history, không sửa W24, không chạy Batch 02 |
+| D-005 | TJ, 2026-11-26, xác nhận trực tiếp trong hội thoại | Chấp nhận SEC-01/02/03 chỉ trong phạm vi repository **PRIVATE**; cho phép tạo repo PRIVATE `teoteo1081/W23_AI-Business-Consulting-Lab`, xác minh visibility `PRIVATE` trước khi push Local Master `main` | Chỉ riêng W23; tuyệt đối không đẩy `private/` (32 file evidence bị `.gitignore` loại trừ); không chạm W24/repo khác; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
 
 ## Hiện hành — Consolidated Checkpoint / Independent Audit — 2026-11-26
 
