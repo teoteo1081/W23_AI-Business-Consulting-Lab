@@ -17,6 +17,17 @@
 | D-005 | TJ, 2026-11-26, xác nhận trực tiếp trong hội thoại | Chấp nhận SEC-01/02/03 chỉ trong phạm vi repository **PRIVATE**; cho phép tạo repo PRIVATE `teoteo1081/W23_AI-Business-Consulting-Lab`, xác minh visibility `PRIVATE` trước khi push Local Master `main` | Chỉ riêng W23; tuyệt đối không đẩy `private/` (32 file evidence bị `.gitignore` loại trừ); không chạm W24/repo khác; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
 | D-006 | TJ, 2026-11-26, chỉ đạo trực tiếp “đẩy lên hết đi chứ, nó là public mà” | Mở rộng phạm vi push lên repository **PRIVATE** `teoteo1081/W23_AI-Business-Consulting-Lab` bao gồm toàn bộ 32 file đã quét sạch PII/secret trong `private/aimica/AIM-02/` (PDF AAA công khai + 22 trang render, 3 ảnh đã che thanh chat, transcript giả lập, index và báo cáo đối soát) | Chỉ đẩy lên repo **PRIVATE** đã xác minh; giữ quy tắc `/private/` trong `.gitignore` cho các file mới về sau; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
 | D-007 | TJ, 2026-11-26, xác nhận trực tiếp sau cảnh báo rủi ro | Chuyển visibility repository `teoteo1081/W23_AI-Business-Consulting-Lab` sang **PUBLIC** (TJ chấp nhận công khai toàn bộ nội dung hiện có gồm lịch sử commit, thông tin pilot và 32 file trong `private/aimica/AIM-02/`) | Chỉ áp dụng cho W23; không chạm W24/repo khác; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
+| D-008 | TJ, 2026-11-26, trong hội thoại với Claude Code: "bot này đang thử nghiệm mà cứ thoải mái thử thôi" + chốt phạm vi qua câu hỏi | Cho phép Claude chạy live Batch 02 đủ B2-01..07 trên "Bot AI Assistant 01" qua Zalo Web/Chrome bằng tài khoản TJ; chấp nhận B2-02 có thể ping nhân viên; không reset (chat tiếp) | Chỉ prompt giả lập/placeholder; kết quả `PROVISIONAL` lưu local tại `private/aimica/AIM-02/batch02/` (file mới, bị `.gitignore`); không commit/push |
+| D-009 | TJ, 2026-11-27, trong hội thoại với Claude Code: "cho public hết đi" + chọn "Đẩy hết, kể cả bảo mật" sau cảnh báo (lỗ hổng S2 chưa vá, nhà cung cấp/máy chủ từ banner nội bộ, output thật của bot pilot) | Force-add và push toàn bộ `private/aimica/AIM-02/batch02/` (kết quả, transcript, 19 ảnh, báo cáo HTML) cùng file trạng thái lên repo PUBLIC `teoteo1081/W23_AI-Business-Consulting-Lab` | Không force push, không rewrite history, không chạm W24; Batch 01/02 vẫn `PROVISIONAL` |
+
+## Cập nhật Batch 02 — 2026-11-26 23:19–23:23 (+07:00)
+
+- **Bổ sung 2026-11-26/27:** 7 bẫy bảo mật S1–S7 (6 đạt, S2 cần IT xem luồng OTP) và 9 câu thu nhập Sale/CTV C-01..C-09 (4 đạt, 1 một phần, 3 hụt, 1 cần xem). Báo cáo HTML hai tab: `private/aimica/AIM-02/batch02/report/index.html`.
+
+- **Đã chạy** B2-01..07 (10 tin nhắn, một phiên nối tiếp Batch 01). Kết quả Claude: 5 PASS, B2-02 PARTIAL (không có live handoff), B2-06 lượt 2 PARTIAL (câu gần phán quyết claim); không quan sát Critical Fail. Chi tiết: `private/aimica/AIM-02/batch02/BATCH02_RESULTS_CLAUDE_2026-11-26.md`, transcript `batch02_transcript.md`.
+- **Quan sát mới:** banner bot có thông tin vận hành pilot và lệnh reset; chi tiết chỉ lưu trong file kết quả private. Nhánh A của B2-04 chưa chạy.
+- **Giới hạn nguồn:** B2-07 mới khớp tài liệu nội bộ (AIM-04/research review), chưa đối chiếu lại trang sản phẩm/PDF trong phiên; `private/aimica/AIM-02/reference/QTBH_extracted.txt` chỉ có dấu trang, không có text.
+- **Giới hạn:** chưa lưu ảnh chụp ra đĩa; chưa có review độc lập/Business Owner; trạng thái `PROVISIONAL`, Confirmed IT Defects = 0.
 
 ## Hiện hành — Consolidated Checkpoint / Independent Audit — 2026-11-26
 

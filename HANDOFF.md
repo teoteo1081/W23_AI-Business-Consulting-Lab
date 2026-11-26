@@ -1,5 +1,11 @@
 # Handoff — AIM-04 Handover Checkpoint cho Codex (Chờ duyệt Batch 02)
 
+## Handoff hiện hành — Claude Code, Batch 02 live — 2026-11-26
+
+- **Làm gì:** theo D-008 (xem PROJECT_STATUS.md), Claude chạy B2-01..07 trên Bot AI Assistant 01 qua Zalo Web; kết quả và transcript tại `private/aimica/AIM-02/batch02/` (local, ignore, không backup Git).
+- **Lưu ý trạng thái Git:** repo đã có remote `origin` và đang PUBLIC (D-005..D-007); các dòng "không remote / main @ 623c518" bên dưới là snapshot cũ. Theo D-009, toàn bộ `private/aimica/AIM-02/batch02/` (kể cả bẫy bảo mật S1–S7 và câu thu nhập CTV C-01..C-09) đã được force-add và push công khai.
+- **Bước tiếp theo:** Codex/Business Owner review độc lập kết quả Batch 02; quyết định có chạy B2-04 Nhánh A sau `/new` không.
+
 ## Handoff hiện hành — Codex consolidated checkpoint — 2026-11-26
 
 - **Đã tiếp nhận:** đọc toàn bộ AIM-04 và diff ba file điều phối AGY. Giữ nguyên file AIM-04; không chấm lại Batch 01 hoặc thay rubric được duyệt. Ghi CONS-01..09 riêng trong INDEPENDENT_AUDIT_PACKAGE.md.
