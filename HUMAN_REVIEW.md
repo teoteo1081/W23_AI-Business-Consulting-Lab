@@ -1,5 +1,7 @@
 # AIM-01 — Human Review
 
+> Snapshot at AIM-01 close (2026-11-25). AIM-02 Batch 01 was subsequently run and remains PROVISIONAL; see the current `PROJECT_STATUS.md` and `AIM-02_HUMAN_REVIEW.md`. The scope/permission statements below describe the earlier checkpoint.
+
 Ngày: 2026-11-25. TJ đã xem báo cáo và chốt ưu tiên; AIM-01 đóng ở mức nghiên cứu/tài liệu, chưa có khách duyệt requirements.
 
 **Điều đã biết:** website giới thiệu bảo hiểm online, CTV và AI hỗ trợ. Chưa xác minh năng lực AI, pháp nhân phân phối, đối tác, nhân thọ đang bán hoặc cơ chế hoa hồng. Nguồn và giới hạn ở [Industry Brief](INDUSTRY_BRIEF.md).

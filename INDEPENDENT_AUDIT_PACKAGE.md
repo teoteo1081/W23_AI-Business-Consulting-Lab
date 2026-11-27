@@ -1,6 +1,8 @@
 # Independent Audit — W23 / AIMICA
 
-Ngày: 2026-11-26. Người chuẩn bị: Codex. Trạng thái: tài liệu local đã chuẩn bị; **chưa được duyệt chia sẻ ngoài máy**. Đây là chỉ dẫn kiểm tra, không phải chatbot đã triển khai, yêu cầu khách duyệt hoặc báo cáo audit độc lập mới.
+> **Cập nhật theo quyết định TJ 2026-11-26:** W23 PUBLIC có chủ đích; giữ nguyên lịch sử. TJ cho Claude/Codex/AGY đọc tài liệu đã xác nhận đủ điều kiện công khai. Repo có 32 file dưới `private/` đã được rà theo nội dung; không mặc định là nhạy cảm do tên thư mục. Gói summary này và Business Discovery Brief đủ điều kiện cho Claude đọc để review logic; raw transcript/CSV/screenshots/PDF và báo cáo có chi tiết vận hành pilot không nằm trong handoff Claude hiện tại. Primary evidence đang public trong repo; Claude không được yêu cầu xác minh QA độc lập từ summary thay cho nguồn gốc.
+
+Ngày: 2026-11-26. Người chuẩn bị: Codex. Trạng thái: tài liệu hướng dẫn audit; Business Owner cho phép Claude đọc package này để review brief theo phạm vi handoff. Đây không phải kết quả audit mới, chatbot đã triển khai, hay yêu cầu khách duyệt.
 
 ## Cách đọc và thẩm quyền
 
@@ -14,8 +16,8 @@ Chỉ đạo mới nhất của TJ trong hội thoại có ưu tiên hơn snapsh
 | Requirements/discovery | HUMAN_REVIEW.md, INDUSTRY_BRIEF.md, DISCOVERY_QUESTIONS.md, INITIAL_USE_CASES.md | Câu hỏi và giả thuyết; chưa phải requirements khách duyệt. AIMICA_DISCOVERY.md là bản nháp lịch sử |
 | QA design/results | AIMICA_RESEARCH_REVIEW.md, AIM-02_HUMAN_REVIEW.md | Rubric nháp và summary; phần pre-QA còn mâu thuẫn về PDF/quyền, không dùng làm trạng thái hiện hành |
 | Roadmap | AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md | Đầu ra AGY được giữ nguyên; B2-01..B2-07 là đề xuất chưa chạy. Đọc các phát hiện CONS bên dưới trước khi sử dụng |
-| Source evidence LOCAL ONLY | private/aimica/AIM-02/evidence_index.csv; QA_HANDOFF_SUMMARY.md; AIM-02_INDEPENDENT_REVIEW_CODEX_2026-11-25.md | Đã kiểm tra tồn tại, đối soát trạng thái, tham chiếu và hash liên quan; không có trong commit Git. Cần bản chia sẻ được duyệt |
-| Primary evidence LOCAL ONLY | raw/batch01_transcript.json; redacted/TC-01.png, TC-03A.png, TC-03B.png; reference/PDF và ảnh trang, tất cả dưới private/aimica/AIM-02/ | Không tự upload/force-add. Nhãn redacted không chứng minh đủ điều kiện chia sẻ |
+| Source evidence (public repo; Claude handoff excluded) | `private/aimica/AIM-02/evidence_index.csv`; `QA_HANDOFF_SUMMARY.md`; `AIM-02_INDEPENDENT_REVIEW_CODEX_2026-11-25.md` | Các file được track và public. Index/summary chứa prompt giả lập và output thật của bot. Dùng để trace nội bộ; handoff Claude chỉ cần summary công khai trong package này |
+| Primary evidence (public repo; Claude handoff excluded) | `raw/batch01_transcript.json`; 3 ảnh TC-01/03A/03B; PDF policy AAA và 22 page renders | Có mặt trong lịch sử public. Rà soát hiện tại không thấy dữ liệu khách hay credential; không gửi nguyên bản trong review brief. Dùng link nguồn policy thay full scan nếu cần trích dẫn |
 | Ground truth | URL sản phẩm/nguồn tại research review và PDF AAA được báo cáo 22 trang | Prior review đã kiểm sáu trang liên quan và báo hash khớp nguồn công khai. Audit hợp nhất chỉ tái kiểm hash, không xác nhận mới nội dung PDF, tính áp dụng hợp đồng hoặc pháp luật |
 
 ## Traceability: yêu cầu → bằng chứng → finding → roadmap
@@ -58,6 +60,6 @@ Codex đã đọc toàn bộ file bàn giao và ba diff điều phối; tài li�
 
 Đầu ra audit nên ghi finding ID, mức ảnh hưởng, locator/source version, quan sát so với giả thuyết, giới hạn và điều kiện đóng. Không chép thông tin nhạy cảm.
 
-## Gói chia sẻ chưa đủ điều kiện phát hành
+## Phạm vi Independent Audit được phép dùng
 
-Local document review đã có tài liệu cần thiết. Kiểm chứng độc lập QA từ GitHub vẫn BLOCKED vì primary evidence và prior independent review chỉ local; chưa có allowlist, quyền chia sẻ/retention và visibility đã xác minh. Không tạo bản transcript thay thế rồi gọi đó là evidence gốc. Khi có quyền, tạo bản chia sẻ có traceability tới nguồn local và bản redaction được kiểm duyệt. File inventory/hash không thay thế nội dung nguồn.
+Claude có thể đọc gói này và `AIMICA_BUSINESS_DISCOVERY_BRIEF.md` cùng allowlist trong `HANDOFF.md`. Handoff chỉ yêu cầu review logic/giả định của brief; không yêu cầu mở primary evidence. Do đó QA adjudication từ nguồn trong một lượt Claude riêng vẫn `INSUFFICIENT_EVIDENCE` nếu không cung cấp primary evidence và ground truth. Không kết luận rằng evidence chưa được push—nó đang trong public Git—hoặc rằng summary thay cho nguồn gốc.

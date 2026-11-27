@@ -1,5 +1,7 @@
 # AIMICA — Research & QA Baseline Review (AIM-02 Step 0–2)
 
+> **Historical pre-live-QA snapshot (2026-11-25):** statements below that say no Zalo test/PDF collection had occurred describe the baseline review at that time. Batch 01 was subsequently executed and reviewed; current bounded findings are in `AIM-02_HUMAN_REVIEW.md` and `INDEPENDENT_AUDIT_PACKAGE.md`.
+
 **Ngày tổng hợp:** 2026-11-25 (Asia/Saigon)  
 **Phạm vi:** Tổng hợp kết quả AIM-02 Step 0 (kết nối Chrome & xác minh mục tiêu Zalo), Step 1 (nghiên cứu AIMICA, đối thủ, rubric, 10 test cases) và Step 2 (kiểm tra mức độ đầy đủ trước live QA).  
 **Giới hạn:** Chưa thực hiện live QA trên Zalo, chưa gửi tin nhắn, chưa phỏng vấn AIMICA, không chứa thông tin định danh cá nhân, cookie, token hay nội dung hội thoại riêng tư.

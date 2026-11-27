@@ -2,7 +2,7 @@
 
 ## Cập nhật hiện hành — 2026-11-26
 
-Theo chỉ đạo hợp nhất W23 của TJ, Codex tiếp nhận AIM-04 và chuẩn bị hồ sơ Independent Audit. Batch 01 được báo cáo PROVISIONAL; AIM-04 là kế hoạch chưa thực thi Batch 02. Audit security/sharing BLOCKED; chưa commit hoặc push phần hợp nhất. Chỉ được commit sau PASS; push cần TJ duyệt nội dung và thao tác riêng, đúng đích PRIVATE đã xác minh. Không thay mục tiêu Lab, không chạy batch/Phase 2 mới, không rewrite history hoặc thay đổi W24. CHECKPOINT_LOG.md là mốc hợp nhất; các phần phạm vi AIM-01 bên dưới là snapshot lịch sử. Chưa có yêu cầu khách duyệt.
+Theo quyết định mới của TJ, repository W23 được chủ động giữ **PUBLIC**; giữ nguyên lịch sử Git. Claude, Codex và AGY được đọc các tài liệu đã được rà soát đủ điều kiện công khai. Email chủ repo không tự động là lỗi bảo mật; việc phân loại nội dung dựa trên nội dung và quyền công bố, không dựa vào `private/`. Batch 01 vẫn PROVISIONAL; AIM-04 chỉ là research/planning; không chạy Batch 02 nếu chưa được duyệt. Nhiệm vụ hiện tại là chuẩn bị Business Discovery Brief và handoff không trùng lặp. Chưa liên hệ khách hoặc gửi tài liệu ra ngoài. Không thay mục tiêu Lab; nội dung lịch sử bên dưới là snapshot theo thời điểm.
 
 Chủ sở hữu: TJ. Ngày khởi tạo: 2026-11-25 (Asia/Saigon).
 

@@ -1,6 +1,42 @@
 # Project Status
 
-## Hiện hành — Cross-Agent Handover (Codex → AGY) & Safe Local Checkpoint — 2026-11-26
+## Hiện hành — W23 Chatbot Evaluation Framework V2.1 — 2026-11-26
+
+- **Phạm vi hiện tại:** hoàn thiện Rubric V2, scorecard Excel tự tính và hướng dẫn tiếng Việt, minh họa bằng 3 tình huống Batch 01 hiện có. Không chạy thêm chatbot QA, không liên hệ AIMICA, không sửa W24, không commit/push.
+- **Đầu ra local:** `products/chatbot-evaluation/Rubric_V2.md`; `W23_Chatbot_Evaluation_Scorecard_V2.xlsx`; `Batch02_Test_Matrix_V2.md`; `Executive_Summary_AIMICA_Batch01.md`; `Huong_dan_Scorecard.md`.
+- **VERIFIED FACT (kiểm tra workbook):** Excel COM tính Batch 01 là 3.0746/5 (hiển thị 3.07), Evidence Coverage 67%, 6 SCORED / 4 UNKNOWN / 0 N/A / 0 trống. Kiểm công thức cho điểm đơn, N/A, CF override, status trống, điểm ngoài miền và toàn N/A; không có lỗi công thức trong vùng dùng. Bố cục các sheet chính đã xem qua PDF render.
+- **SOURCE CLAIM (tóm tắt kết quả Batch 01 hiện có):** TC-01 PARTIAL về nhu cầu dù phí/STBH đúng trong phạm vi kiểm; TC-03A PASS phạm vi web nhưng PARTIAL độ đầy đủ PDF; TC-03B PASS trong hai điều kiện loại trừ đã hỏi. Batch 01 vẫn PROVISIONAL; Confirmed IT Defects = 0. Không chấm lại raw evidence trong checkpoint này.
+- **PROPOSAL:** Rubric V2 gồm 10 tiêu chí, weights 100%, anchors 0–5, scoring rules, CF và UNKNOWN/N/A. Chưa calibrate, chưa phải tiêu chuẩn/ngưỡng AIMICA phê duyệt.
+- **UNKNOWN:** privacy, clarity, context, buyer journey và phần lớn handoff chưa đủ evidence; để UNKNOWN. Batch 02 B2-01..B2-07 chỉ chuẩn bị, chưa chạy.
+- **Git/external:** không tạo commit hoặc push cho lần hoàn thiện này. Không gửi cho khách hàng hay dịch vụ ngoài. Working tree vẫn chứa các thay đổi local.
+- **Giới hạn/kế tiếp:** tiêu chí, trọng số và anchors vẫn là đề xuất nội bộ, chưa calibrate hoặc được AIMICA phê duyệt. Batch 01 vẫn PROVISIONAL; TJ xem xét bộ sản phẩm. Không chạy Batch 02 hoặc liên hệ AIMICA nếu chưa có quyết định riêng.
+
+## Snapshot — Business Owner Decision & Return to Business — 2026-11-26 (không phải nhiệm vụ hiện hành)
+
+- **Quyết định TJ:** D1 giữ repository PUBLIC có chủ đích; D2 giữ lịch sử; D3 cho Claude/Codex/AGY đọc tài liệu đã rà soát đủ điều kiện công khai. Các blocker trước đó về PUBLIC, email metadata và presence evidence đã được xử lý bằng quyết định owner; không tự động gán chúng là lỗi bảo mật.
+- **Content review:** rà 32 file trong `private/`: không thấy customer PII hay credential. Prompt QA là dữ liệu giả lập; output là phản hồi thật của bot; PDF AAA là quy tắc công khai có tên/chức danh/chữ ký người ký; báo cáo cũ còn chi tiết pilot nội bộ/nhà cung cấp và workspace nên không nằm trong Claude handoff. Rà soát chi tiết ở AIM-03 audit; không kết luận quyền tái xuất bản mọi nội dung bên thứ ba.
+- **Git:** local `main` sạch ở `9276976f547178cfe2893dfed8a4a4e1c2f8be92`, đồng bộ `origin/main`, một worktree. Repo PUBLIC/default `main` được GitHub API xác nhận ở checkpoint trước. Mô tả “không remote/chưa push/private evidence chỉ local” dưới đây là snapshot lịch sử.
+- **Track A:** AIM-01 desk research DONE; AIM-02 Batch 01 vẫn PROVISIONAL (3 ca, Confirmed IT Defects = 0); AIM-04 là research/planning DONE; Batch 02 chưa chạy. Business Discovery Brief đã chuẩn bị; chưa có KPI nền, yêu cầu khách duyệt hay ROI tính được.
+- **Track B:** có bộ câu hỏi discovery, Wheel Check, daily summary, evidence traceability, rubric/index, customer-journey gap analysis, test matrix/handoff framework và CONS-01..09 lessons. Đây là phương pháp nội bộ, chưa được benchmark/calibration đầy đủ.
+- **Handoff:** [HANDOFF.md](HANDOFF.md) tách vai trò Codex/Claude/AGY và allowlist tài liệu; chưa liên hệ khách.
+- **Một bước tiếp theo:** TJ quyết định có ủy quyền buổi discovery với AIMICA và chỉ định đầu mối/người tham gia hay giữ brief nội bộ. Không chạy Batch 02.
+
+| ID | Người/ngày/căn cứ | Quyết định | Ranh giới |
+|---|---|---|---|
+| D-008 | TJ, 2026-11-26, “W23 — BUSINESS OWNER DECISION & CONTINUE EXECUTION” | Giữ W23 PUBLIC có chủ đích; giữ nguyên Git history; Claude/Codex/AGY được đọc tài liệu đã được xác nhận phù hợp công khai | Không coi visibility/email là lỗi tự động; phân loại theo nội dung và quyền công bố; không tự chạy Batch 02 hoặc liên hệ khách |
+
+## Snapshot lịch sử — AIM-03 CHECKPOINT 02 / Public Exposure — 2026-11-26 (đã supersede)
+
+- **Căn cứ:** yêu cầu W23 AIM-03 CHECKPOINT 02 của TJ. Không sửa visibility, xóa dữ liệu, rewrite history, commit/push, chia sẻ cho Claude, chạy Batch 02 hoặc liên hệ khách.
+- **GitHub/local đã xác minh:** root W23; local `main` sạch, đồng bộ `origin/main` tại `9276976f547178cfe2893dfed8a4a4e1c2f8be92`; một worktree; remote đúng URL repo. GitHub REST API và `gh` xác nhận repository `PUBLIC`, default `main`, latest SHA trùng local. Lịch sử hiện có 7 commit với email cá nhân trong author/committer metadata.
+- **Exposure:** local Git có 32 file track dưới `private/`; GitHub recursive tree có 38 entry gồm 32 file + 6 thư mục. Có raw transcript, screenshots, source PDF và renders. `.gitignore` không gỡ file đã track. Các checkpoint cũ về “không remote/không push”, “32 file chỉ local/ignored” và “không có evidence trong Git” đã lỗi thời/sai theo trạng thái hiện tại; số lượng 32 file là đúng, trạng thái local-only là sai.
+- **Security:** SEC-01 FAIL; SEC-02 NEEDS BUSINESS OWNER DECISION; SEC-03 NEEDS BUSINESS OWNER DECISION; SEC-04 FAIL; SEC-05 BLOCKED (quét pattern credential giới hạn trên 7 commit không có hit trong text blobs, nhưng chưa phải scanner toàn diện; GitHub secret scanning/push protection disabled); SEC-06 FAIL. Public access control FAIL; số người xem/tải/copy/fork UNKNOWN. Tổng thể BLOCKED, không PASS.
+- **Independent Audit:** gói hiện hành không được duyệt gửi Claude. Chưa có allowlist/quyền chia sẻ/retention. PRIVATE visibility nếu TJ chọn sẽ không thu hồi bản sao/không làm sạch lịch sử.
+- **Business:** AIM-01 desk research DONE; AIM-02 Batch 01 vẫn PROVISIONAL (3 ca; Confirmed IT Defects = 0); AIM-04 research/planning DONE; Batch 02 chưa chạy/chưa được phép. Không có KPI nền hay tiêu chí nghiệm thu từ AIMICA.
+- **Phiếu TJ:** [AIM-03_CHECKPOINT02_HUMAN_DECISION_SHEET.md](AIM-03_CHECKPOINT02_HUMAN_DECISION_SHEET.md) nêu D1–D4, lợi ích/rủi ro và trả lời 7 câu Business Readiness.
+- **Bước kế tiếp duy nhất:** chờ TJ chốt D1–D3 (visibility/exposure disposition, lịch sử, allowlist chia sẻ). Không mở phase hoặc batch mới.
+
+## Snapshot — Cross-Agent Handover (Codex → AGY) & Safe Local Checkpoint — 2026-11-26
 
 - **Căn cứ:** Chỉ đạo “W23 — CROSS-AGENT HANDOVER: CODEX → AGY” ngày 2026-11-26 (Decision `D-004`). TJ chuyển quyền thực thi W23 từ Codex sang AGY, cho phép kiểm chứng Git, phân loại bảo mật/chia sẻ, đề xuất kiến trúc 2 repository, cập nhật `HANDOVER.md`/`PROJECT_STATUS.md` và tạo **local checkpoint commit an toàn**; nghiêm cấm push GitHub, tạo remote, rewrite history, sửa W24 hoặc chạy Batch 02.
 - **Đối chiếu & Tiếp quản:** Xác nhận thực tế repo khớp báo cáo Codex (`main` @ `623c518`, 8 modified, 5 untracked, 0 remote, 32 file trong `private/` bị ignore, `git fsck` sạch). Bảo toàn 100% công việc hợp lệ của Codex (`AIM-03`, `CHECKPOINT_LOG.md`, `INDEPENDENT_AUDIT_PACKAGE.md`, `.gitignore`, cập nhật quản trị) và `AIM-04` của AGY.
@@ -18,7 +54,7 @@
 | D-006 | TJ, 2026-11-26, chỉ đạo trực tiếp “đẩy lên hết đi chứ, nó là public mà” | Mở rộng phạm vi push lên repository **PRIVATE** `teoteo1081/W23_AI-Business-Consulting-Lab` bao gồm toàn bộ 32 file đã quét sạch PII/secret trong `private/aimica/AIM-02/` (PDF AAA công khai + 22 trang render, 3 ảnh đã che thanh chat, transcript giả lập, index và báo cáo đối soát) | Chỉ đẩy lên repo **PRIVATE** đã xác minh; giữ quy tắc `/private/` trong `.gitignore` cho các file mới về sau; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
 | D-007 | TJ, 2026-11-26, xác nhận trực tiếp sau cảnh báo rủi ro | Chuyển visibility repository `teoteo1081/W23_AI-Business-Consulting-Lab` sang **PUBLIC** (TJ chấp nhận công khai toàn bộ nội dung hiện có gồm lịch sử commit, thông tin pilot và 32 file trong `private/aimica/AIM-02/`) | Chỉ áp dụng cho W23; không chạm W24/repo khác; giữ Batch 01 `PROVISIONAL`, không chạy Batch 02 |
 
-## Hiện hành — Consolidated Checkpoint / Independent Audit — 2026-11-26
+## Snapshot — Consolidated Checkpoint / Independent Audit — 2026-11-26
 
 - **Căn cứ mới:** TJ yêu cầu hợp nhất AIM-03 của Codex và AIM-04 của AGY, lưu báo cáo, đối chiếu hồ sơ, quét toàn bộ tracked files/history và chỉ commit nếu security PASS. Chưa duyệt nội dung chia sẻ hoặc push. Không thay đổi W24.
 - **Kết quả:** AIM-03 đã lưu tại [Security Audit](AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md); toàn bộ file AIM-04 và ba diff điều phối đã được tiếp nhận. Bản AIM-04 của AGY giữ nguyên; review consistency/rubric CONS-01..09 trong [Independent Audit Package](INDEPENDENT_AUDIT_PACKAGE.md). Không phát sinh kết quả chatbot mới.

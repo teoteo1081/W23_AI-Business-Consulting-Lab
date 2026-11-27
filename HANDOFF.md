@@ -1,6 +1,36 @@
-# Handoff — AIM-04 Handover Checkpoint cho Codex (Chờ duyệt Batch 02)
+# W23 Handoff — trạng thái, vai trò và bước tiếp theo
 
-## Handoff hiện hành — Codex consolidated checkpoint — 2026-11-26
+## Hiện hành — Chatbot Evaluation Framework V2.1 — 2026-11-26
+
+- **Sản phẩm hoàn thiện local:** [Rubric V2.1](products/chatbot-evaluation/Rubric_V2.md), [Excel Scorecard tự chấm](products/chatbot-evaluation/W23_Chatbot_Evaluation_Scorecard_V2.xlsx), [Batch 02 Matrix](products/chatbot-evaluation/Batch02_Test_Matrix_V2.md), [Executive Summary](products/chatbot-evaluation/Executive_Summary_AIMICA_Batch01.md), [Hướng dẫn tiếng Việt](products/chatbot-evaluation/Huong_dan_Scorecard.md).
+- **Phân biệt framework và AIMICA:** sheet Rubric/Template dùng chung; tab `AIMICA Batch 01` và executive summary chỉ chứa điểm/locator từ summary hiện có, không nhúng raw transcript/ảnh. Trọng số và cutoffs là proposal, chưa calibrate hoặc AIMICA phê duyệt.
+- **Batch 01:** áp rubric trên summary đã có: 3.07/5 phần đã chấm, 67% Evidence Coverage, 6 tiêu chí SCORED / 4 UNKNOWN / 0 N/A. Kết quả vẫn PROVISIONAL; Confirmed IT Defects = 0. Không chấm lại raw evidence trong checkpoint này.
+- **Batch 02:** B2-01..B2-07 được ánh xạ vào C1–C10, kèm prompt giả lập/expected behavior/gates. Tất cả `NOT RUN`; chưa có authorization để live QA.
+- **Kiểm tra file:** Excel COM recalculate, kiểm các nhánh tính điểm/coverage/N-A/CF/đầu vào lỗi và PDF render các sheet chính; không thấy lỗi công thức. Đây là tự kiểm sản phẩm, không phải audit độc lập hay calibration.
+- **Quyền/phạm vi:** không liên hệ AIMICA, không gửi tài liệu ra ngoài, không chỉnh W24, không commit/push.
+- **Bước tiếp theo:** TJ xem Rubric V2.1 và hướng dẫn; dùng template khi có evidence mới được phép chấm. Batch 01 vẫn PROVISIONAL; chưa chạy thêm QA, chưa liên hệ khách, không commit/push.
+
+## Snapshot — W23 Business Discovery / Handoff đa AI — 2026-11-26 (đang để lại, không phải việc hiện hành)
+
+- **Owner decisions:** W23 PUBLIC có chủ đích; giữ nguyên lịch sử; Claude/Codex/AGY được đọc tài liệu đã rà soát đủ điều kiện công khai. Không còn chờ quyết định D1–D3.
+- **Rà nội dung evidence:** 32 file dưới `private/` đã phân loại theo nội dung. Không thấy PII khách hoặc credential. Ba test prompts là synthetic, output là bot thật; AAA PDF là policy công khai có thông tin liên hệ, tên/chữ ký người ký. Báo cáo nghiên cứu cũ nêu chi tiết pilot/provider và workspace, không cần cho brief. Xem bảng phân loại trong [AIM-03 audit](AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md).
+- **Đầu ra:** [AIMICA Business Discovery Brief](AIMICA_BUSINESS_DISCOVERY_BRIEF.md) — problem discovery, câu hỏi, KPI evidence cần xin, gates tới Gap Analysis/Solution Design/ROI/Commercial Proposal. Chưa gửi AIMICA.
+- **Claude — independent brief reviewer:** chỉ đọc `AIMICA_BUSINESS_DISCOVERY_BRIEF.md`, `INDEPENDENT_AUDIT_PACKAGE.md`, `LAB_ANCHOR.md`, `INDUSTRY_BRIEF.md`, `DISCOVERY_QUESTIONS.md`, `HUMAN_REVIEW.md`. Trả về: (1) giả định/yêu cầu chưa có nguồn, (2) tối đa 3 câu hỏi có giá trị thông tin cao nhất, (3) kiểm tra đường dẫn từ discovery đến proposal. Không chấm lại QA, không kết luận từ primary evidence, không sửa brief. Đây là phạm vi handoff đã chuẩn bị; chưa gửi lời nhắn/đính kèm.
+- **AGY — customer journey & Track B mapper:** đọc `AIMICA_BUSINESS_DISCOVERY_BRIEF.md`, `AIM-04_CUSTOMER_JOURNEY_AND_BATCH02_PLAN.md`, `DISCOVERY_QUESTIONS.md`, `WHEEL_CHECK_TEMPLATE.md`. Chỉ lập bảng liên kết journey gaps → câu hỏi discovery → reusable template/lesson; chỉ ra phần nào không phục vụ quyết định kinh doanh. Giữ nguyên AIM-04; không thiết kế thêm batch, chạy Zalo hay lặp review brief của Claude.
+- **Codex — integrator:** đã tổng hợp nguồn hiện có thành brief; sau phản hồi AI, chỉ hợp nhất phần không mâu thuẫn với Anchor/evidence. Không tự liên hệ khách, chia sẻ file hay chạy Batch 02.
+- **Claude scope excludes** raw transcript, evidence index CSV, 3 screenshots, full PDF/page renders và `AIMICA_RESEARCH_REVIEW_FULL.md` chứa chi tiết internal-pilot/workspace. Chúng không cần cho review brief này; đây là giới hạn theo mục đích, không phải kết luận rằng toàn bộ là confidential. Không gửi kèm.
+- **Bước tiếp theo duy nhất:** TJ xem brief và quyết định có ủy quyền buổi discovery với AIMICA; nếu có, chỉ định đầu mối/người tham gia/kênh. Không liên hệ khách cho tới khi TJ quyết định.
+
+## Snapshot AIM-03 CHECKPOINT 02 trước quyết định mới (superseded)
+
+- Local `main` sạch, `origin/main` trùng tại `9276976f547178cfe2893dfed8a4a4e1c2f8be92`; GitHub API xác nhận repo PUBLIC, default `main`.
+- Bảy commit có email cá nhân trong metadata. Có 32 file tracked dưới `private/` (GitHub tree có 38 entry gồm 6 thư mục), gồm raw transcript, screenshots, PDF và renders. Tài liệu handoff cũ ghi private evidence chỉ local/ignored và GitHub chưa được xác minh là **không còn đúng**.
+- Security/sharing = **BLOCKED / NOT PASS**. SEC-01/04/06 FAIL; SEC-02/03 cần quyết định TJ; SEC-05 BLOCKED. Không biết ai đã truy cập/tải/copy. Đổi sang PRIVATE không thu hồi bản sao.
+- Không gửi Independent Audit package cho Claude; chưa có allowlist/chấp thuận chia sẻ. Không đổi visibility, xóa file, rewrite history, commit/push hoặc chạy Batch 02.
+- Đọc [phiếu quyết định](AIM-03_CHECKPOINT02_HUMAN_DECISION_SHEET.md), [security audit](AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md), [checkpoint log](CHECKPOINT_LOG.md). Các snapshot bên dưới không phản ánh trạng thái Git mới.
+- **Bước tiếp theo duy nhất:** chờ TJ chốt D1–D3 (exposure/visibility, disposition lịch sử, allowlist). Sau quyết định mới xác định remediation/checklist kế tiếp; không tự mở phase.
+
+## Snapshot — Codex consolidated checkpoint trước quyết định mới
 
 - **Đã tiếp nhận:** đọc toàn bộ AIM-04 và diff ba file điều phối AGY. Giữ nguyên file AIM-04; không chấm lại Batch 01 hoặc thay rubric được duyệt. Ghi CONS-01..09 riêng trong INDEPENDENT_AUDIT_PACKAGE.md.
 - **Đã lưu:** AIM-03_SECURITY_AND_GITHUB_READINESS_AUDIT.md, INDEPENDENT_AUDIT_PACKAGE.md, CHECKPOINT_LOG.md; cập nhật các đầu mối quản trị và củng cố .gitignore. Không chuyển hoặc sửa bằng chứng private.

@@ -1,8 +1,8 @@
 # Hướng dẫn chung cho mọi AI
 
-## Quyền hiện hành — hợp nhất W23, 2026-11-26
+## Quyền hiện hành — quyết định Business Owner, 2026-11-26
 
-TJ đã yêu cầu tiếp nhận AIM-04, lưu AIM-03, đối chiếu tài liệu và audit bảo mật; chỉ commit nếu security audit PASS. Hiện audit BLOCKED, không commit/push. Batch 01 đã được báo cáo PROVISIONAL; AIM-04 mới là research/planning. Không chạy Batch 02. Push chỉ sau khi TJ duyệt nội dung cụ thể và thao tác push tới repository PRIVATE đã xác minh; không force push/rewrite history hoặc thay đổi W24. Đọc CHECKPOINT_LOG.md và INDEPENDENT_AUDIT_PACKAGE.md trước các snapshot dưới đây. Quyền cũ ghi AIM-02 chưa bắt đầu chỉ phản ánh checkpoint AIM-01, không phải trạng thái QA mới nhất. Không coi báo cáo quyền Batch 01 là quyền chia sẻ evidence ngoài máy.
+TJ xác nhận W23 **PUBLIC có chủ đích** (D1), giữ nguyên lịch sử (D2), và cho Claude/Codex/AGY đọc những tài liệu đã được xác nhận đủ điều kiện công khai (D3). Không coi email của chủ repo hoặc tên `private/` tự động là lỗi/phân loại bảo mật; rà soát theo nội dung thật và quyền công bố. Batch 01 vẫn PROVISIONAL; AIM-04 chỉ là research/planning; không chạy Batch 02 khi chưa được duyệt. Hiện được phép chuẩn bị Business Discovery Brief và handoff; không tự liên hệ khách hoặc gửi tài liệu ra ngoài. Không commit/push nếu chưa có chỉ đạo riêng; không rewrite history, force push, thay đổi W24. Đọc cập nhật đầu `CHECKPOINT_LOG.md`, `PROJECT_STATUS.md` và `HANDOFF.md`; các snapshot cũ là lịch sử. Quyền đọc tài liệu không mặc nhiên bao gồm quyền tái xuất bản hoặc chuyển raw evidence của bên thứ ba.
 
 Áp dụng cho Codex, Claude, AGY và AI khác làm việc trong repository này. Chủ sở hữu và người duyệt phạm vi: TJ.
 
@@ -11,7 +11,7 @@ TJ đã yêu cầu tiếp nhận AIM-04, lưu AIM-03, đối chiếu tài liệu
 - Đọc LAB_ANCHOR.md, PROJECT_STATUS.md, TASK_BOARD.md và HANDOFF.md trước khi chọn việc.
 - Kiểm tra đường dẫn và Git: `git rev-parse --show-toplevel`, `git status --short --branch`, `git worktree list --porcelain`, `git remote -v`. Kiểm tra refs/commit nếu có. Không coi checkout đang mở là bản mới nhất khi có worktree hoặc nhánh khác.
 - Đọc hướng dẫn áp dụng ở thư mục cha và thư mục con liên quan. Nếu thực tế khác tài liệu, ghi chênh lệch; không tự sửa lịch sử để khớp báo cáo.
-- Quyền hiện tại: AIM-01 đã đóng; TJ duyệt ghi quyết định ưu tiên và tạo checkpoint Git riêng cho AIM-01. AIM-02 chỉ được lập nhiệm vụ/handoff, chưa được bắt đầu. Xem Decision Log trong PROJECT_STATUS.md; không tự chạy Zalo, kiểm thử hệ thống, liên hệ khách hoặc mở Phase 2.
+- Quyền hiện tại: AIM-01 đã đóng; Batch 01 đã chạy 3 ca và vẫn PROVISIONAL; Batch 02 chưa được duyệt. Brief Business Discovery đã chuẩn bị; chỉ TJ quyết định có tiến hành buổi discovery với AIMICA. Không tự chạy Zalo hoặc liên hệ khách. Xem mục hiện hành và D-008 trong PROJECT_STATUS.md.
 
 ## Trước khi sửa
 
